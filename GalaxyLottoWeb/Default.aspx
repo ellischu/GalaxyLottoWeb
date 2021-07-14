@@ -23,7 +23,7 @@
     </script>
     <asp:UpdatePanel ID="UpDefault" runat="server">
         <ContentTemplate>
-            <asp:Panel ID="pnlLastNum" runat="server" EnableViewState="true" ClientIDMode="Static" CssClass="container table" HorizontalAlign="Center">
+            <asp:Panel ID="pnlLastNum" runat="server" EnableViewState="true" ClientIDMode="Static" CssClass="container table-light" HorizontalAlign="Center">
             </asp:Panel>
         </ContentTemplate>
     </asp:UpdatePanel>
