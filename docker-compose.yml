@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  galaxylottoweb:
+    image: ${DOCKER_REGISTRY}galaxylottoweb
+    build:
+      context: .\GalaxyLottoWeb
+      dockerfile: Dockerfile

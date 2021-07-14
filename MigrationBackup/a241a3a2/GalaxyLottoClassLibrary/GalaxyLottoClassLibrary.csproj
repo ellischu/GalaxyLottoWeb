@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B12C092A-6B24-45EA-86AA-24D9E73D3669}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GalaxyLotto.ClassLibrary</RootNamespace>
+    <AssemblyName>GalaxyLotto.ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <LangVersion>7.2</LangVersion>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ellischu.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.interop.access.dao, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\GalaxyLottoWeb\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\GalaxyLottoWeb\packages\System.Windows.Controls.DataVisualization.Toolkit.4.0.0.0\lib\net40-Client\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GLDataB.cs" />
+    <Compile Include="GLDataFreqDNA.cs" />
+    <Compile Include="GLDataFreqSecHistory.cs" />
+    <Compile Include="GLClass.cs" />
+    <Compile Include="GLEnum.cs" />
+    <Compile Include="GLDataData.cs" />
+    <Compile Include="GLDataN.cs" />
+    <Compile Include="GLFreqFilter.cs" />
+    <Compile Include="GLFreqFreqDNA.cs" />
+    <Compile Include="GLFreqFreqSecHis.cs" />
+    <Compile Include="GLActivePublic.cs" />
+    <Compile Include="GLFreqFreqSet.cs" />
+    <Compile Include="GLLastHitPublic.cs" />
+    <Compile Include="GLHitPublic .cs" />
+    <Compile Include="GLMethodSecField.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GLMethodSearchMethod.cs" />
+    <Compile Include="GLMethodMethod.cs" />
+    <Compile Include="GLTablePercentPublic.cs" />
+    <Compile Include="GLSumPublic.cs" />
+    <Compile Include="GLStructure.cs" />
+    <Compile Include="GLDataSet.cs" />
+    <Compile Include="GLFuncPublic.cs" />
+    <Compile Include="GLSearchPublic.cs" />
+    <Compile Include="GLFreqFreq.cs" />
+    <Compile Include="GLMissAlPublicl.cs" />
+    <Compile Include="GLOddEvenPublic.cs" />
+    <Compile Include="GLFuncPrivate.cs" />
+    <Compile Include="GLSearchPrivate.cs" />
+    <Compile Include="GLFreqFreqSec.cs" />
+    <Compile Include="IStuGLSearch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Purple.cs" />
+    <Compile Include="GLFuncSmart.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ellischu.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_tblMissAll01.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_tblMissAll02.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionPurple.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionSearch.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_qryActive.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_qryData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_tblActive.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_539_Creat_tblData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_Big_Creat_tblMissAll01.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql_Big_Creat_tblMissAll02.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

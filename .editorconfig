@@ -1,0 +1,5 @@
+﻿[*.cs]
+
+# CA2100: 必須檢閱 SQL 查詢中是否有安全性弱點
+dotnet_diagnostic.CA2100.severity = suggestion
+dotnet_code_quality.CA2100.excluded_symbol_names = MySqlCommand

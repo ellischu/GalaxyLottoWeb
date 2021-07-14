@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7ACF5207-9166-4457-B788-420C9D60AC75}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GalaxyLottoWeb</RootNamespace>
+    <AssemblyName>GalaxyLottoWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <LangVersion>latest</LangVersion>
+    <TypeScriptTarget>ES2017</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludeIisSettings>true</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
+    <CodeAnalysisRuleSet>GalaxyLottoWeb.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.5.1\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RazorEngine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.10.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll, Version=1.8.14.0, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xml.SgmlReader.1.8.14\lib\net45\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Web.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Windows.Forms.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\btnDownarrow.png" />
+    <Content Include="App_Themes\glmain\glmain.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\galaxylotto.css" />
+    <Content Include="Csv\labelname.txt" />
+    <Content Include="Pages\About.aspx" />
+    <Content Include="Pages\Contact.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Csv\backup\AllData.xlsx" />
+    <Content Include="Csv\backup\data.xlsx" />
+    <Content Include="Csv\backup\data_539_backup.xlsx" />
+    <Content Include="Csv\backup\data_all.csv" />
+    <Content Include="Csv\backup\data_all.xlsx" />
+    <Content Include="Csv\backup\data_all2_1.csv" />
+    <Content Include="Csv\backup\data_big_Backup.xlsx" />
+    <Content Include="Csv\backup\data_Four.csv" />
+    <Content Include="Csv\backup\data_Four.xlsx" />
+    <Content Include="Csv\backup\data_purple.csv" />
+    <Content Include="Csv\backup\data_purple.xlsx" />
+    <Content Include="Csv\backup\data_十神.csv" />
+    <Content Include="Csv\backup\g10.csv" />
+    <Content Include="Csv\backup\g10_propotion.csv" />
+    <Content Include="Csv\backup\g10_season.csv" />
+    <Content Include="Csv\backup\id_name.csv" />
+    <Content Include="Csv\backup\j05.csv" />
+    <Content Include="Csv\backup\p5f_data.csv" />
+    <Content Include="Csv\backup\pur.csv" />
+    <Content Include="Csv\backup\tbldatasix1976_2002.xlsx" />
+    <Content Include="Csv\backup\tbldatasix2003_2012.xlsx" />
+    <Content Include="Csv\backup\tbldatasix_backup.xlsx" />
+    <Content Include="Csv\backup\v1.csv" />
+    <Content Include="Csv\backup\v2.csv" />
+    <Content Include="Csv\backup\v3.csv" />
+    <Content Include="Csv\backup\v4.csv" />
+    <Content Include="Csv\backup\v5.csv" />
+    <Content Include="Csv\backup\v6.csv" />
+    <Content Include="Csv\backup\v7.csv" />
+    <Content Include="Csv\backup\v9.csv" />
+    <Content Include="Csv\FieldName.csv" />
+    <Content Include="Csv\tblData539.csv" />
+    <Content Include="Csv\tblData539.xlsm" />
+    <Content Include="Csv\tblDataBig.csv" />
+    <Content Include="Csv\tblDataBig.xlsm" />
+    <Content Include="Csv\tblDataDafu.csv" />
+    <Content Include="Csv\tblDataDafu.xlsm" />
+    <Content Include="Csv\tblDataSix.csv" />
+    <Content Include="Csv\tblDataSix.xlsm" />
+    <Content Include="Csv\tblDataWeli.csv" />
+    <Content Include="Csv\tblDataWeli.xlsm" />
+    <Content Include="Csv\tblDateAll.csv" />
+    <Content Include="Csv\tblDateAll.xlsm" />
+    <Content Include="Csv\tblDateAllOptions.csv" />
+    <Content Include="Csv\tblDateAllOptions.xlsm" />
+    <Content Include="Csv\tblDateAllPurple.csv" />
+    <Content Include="Csv\tblDateAllPurple.xlsm" />
+    <Content Include="Csv\tblDateAllWC.csv" />
+    <Content Include="Csv\tblDateAllWC.xlsx" />
+    <Content Include="GalaxyLottoWeb.ruleset" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="ellischu.pfx" />
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Pages\DataNB.aspx" />
+    <Content Include="Pages\DataN02.aspx" />
+    <Content Include="Pages\FreqActive01H.aspx" />
+    <Content Include="Pages\FreqActive03.aspx" />
+    <Content Include="Pages\FreqActive02.aspx" />
+    <Content Include="Pages\FreqActive01.aspx" />
+    <Content Include="Pages\DataN01.aspx" />
+    <Content Include="Pages\DataNChart.aspx" />
+    <Content Include="Pages\DataN.aspx" />
+    <Content Include="Pages\FreqActiveChart01.aspx" />
+    <Content Include="Pages\TableDelete.aspx" />
+    <Content Include="Pages\FreqActiveChart.aspx" />
+    <Content Include="Pages\FreqActive.aspx" />
+    <Content Include="Pages\Cacul01.aspx" />
+    <Content Include="Pages\FreqSet.aspx" />
+    <Content Include="Pages\ShowAll.aspx" />
+    <Content Include="Pages\TablePercent02.aspx" />
+    <Content Include="Pages\TablePercent01.aspx" />
+    <Content Include="Pages\TablePercent.aspx" />
+    <Content Include="Pages\SumResult.aspx" />
+    <Content Include="Pages\MissingTotal.aspx" />
+    <Content Include="Pages\SmartTestResult.aspx" />
+    <Content Include="Pages\FreqResult.aspx" />
+    <Content Include="Pages\Related.aspx" />
+    <Content Include="Pages\Search.aspx" />
+    <Content Include="Pages\Update.aspx" />
+    <Content Include="Pages\UpdateResult.aspx" />
+    <Content Include="planet.ico" />
+    <None Include="Resources\bgFlower.jpg" />
+    <None Include="Resources\bgGreen.jpg" />
+    <None Include="Resources\bgKid.jpg" />
+    <None Include="Resources\bgUpdate.gif" />
+    <None Include="Resources\bgYellowflowers.jpg" />
+    <None Include="Resources\Big.jpg" />
+    <None Include="Resources\btnclose00.png" />
+    <None Include="Resources\btnclose01.png" />
+    <None Include="Resources\btnclose02.png" />
+    <None Include="Resources\btnclose03.png" />
+    <None Include="Resources\btnCloseRedBig.png" />
+    <None Include="Resources\btnCloseRedSmall.gif" />
+    <None Include="Resources\btnCopy.png" />
+    <None Include="Resources\btnDownarrow.png" />
+    <None Include="Resources\btnFilecabinet.png" />
+    <None Include="Resources\btnFullView.png" />
+    <None Include="Resources\btnHelp.png" />
+    <None Include="Resources\BtnHelp01.png" />
+    <None Include="Resources\btnList.png" />
+    <None Include="Resources\btnMaxBlue.png" />
+    <None Include="Resources\btnMinBlue.png" />
+    <None Include="Resources\btnMinBlue01.png" />
+    <None Include="Resources\btnRelation.png" />
+    <None Include="Resources\btnSearch .png" />
+    <None Include="Resources\btnSettings.png" />
+    <None Include="Resources\btnUp.png" />
+    <None Include="Resources\btnUparrow.png" />
+    <None Include="Resources\btnUpdate.png" />
+    <None Include="Resources\btnUpdate02.png" />
+    <None Include="Resources\Dafu.jpg" />
+    <None Include="Resources\dot-green-200.png" />
+    <None Include="Resources\dot-red-200.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\icon_Back.png" />
+    <None Include="Resources\l539.jpg" />
+    <None Include="App_LocalResources\N01.png" />
+    <None Include="App_LocalResources\N02.png" />
+    <None Include="App_LocalResources\N03.png" />
+    <None Include="App_LocalResources\N04.png" />
+    <None Include="App_LocalResources\N05.png" />
+    <None Include="App_LocalResources\N06.png" />
+    <None Include="App_LocalResources\N07.png" />
+    <None Include="App_LocalResources\N08.png" />
+    <None Include="App_LocalResources\N09.png" />
+    <None Include="App_LocalResources\N10.png" />
+    <None Include="App_LocalResources\N11.png" />
+    <None Include="App_LocalResources\N12.png" />
+    <None Include="App_LocalResources\N13.png" />
+    <None Include="App_LocalResources\N14.png" />
+    <None Include="App_LocalResources\N15.png" />
+    <None Include="App_LocalResources\N16.png" />
+    <None Include="App_LocalResources\N17.png" />
+    <None Include="App_LocalResources\N18.png" />
+    <None Include="App_LocalResources\N19.png" />
+    <None Include="App_LocalResources\N20.png" />
+    <None Include="App_LocalResources\N21.png" />
+    <None Include="App_LocalResources\N22.png" />
+    <None Include="App_LocalResources\N23.png" />
+    <None Include="App_LocalResources\N24.png" />
+    <None Include="App_LocalResources\N25.png" />
+    <None Include="App_LocalResources\N26.png" />
+    <None Include="App_LocalResources\N27.png" />
+    <None Include="App_LocalResources\N28.png" />
+    <None Include="App_LocalResources\N29.png" />
+    <None Include="App_LocalResources\N30.png" />
+    <None Include="App_LocalResources\N31.png" />
+    <None Include="App_LocalResources\N32.png" />
+    <None Include="App_LocalResources\N33.png" />
+    <None Include="App_LocalResources\N34.png" />
+    <None Include="App_LocalResources\N35.png" />
+    <None Include="App_LocalResources\N36.png" />
+    <None Include="App_LocalResources\N37.png" />
+    <None Include="App_LocalResources\N38.png" />
+    <None Include="App_LocalResources\N39.png" />
+    <None Include="App_LocalResources\N40.png" />
+    <None Include="App_LocalResources\N41.png" />
+    <None Include="App_LocalResources\N42.png" />
+    <None Include="App_LocalResources\N43.png" />
+    <None Include="App_LocalResources\N44.png" />
+    <None Include="App_LocalResources\N45.png" />
+    <None Include="App_LocalResources\N46.png" />
+    <None Include="App_LocalResources\N47.png" />
+    <None Include="App_LocalResources\N48.png" />
+    <None Include="App_LocalResources\N49.png" />
+    <None Include="Resources\planet.png" />
+    <None Include="Resources\Six.jpg" />
+    <None Include="Resources\software-update.png" />
+    <None Include="Resources\spe.gif" />
+    <None Include="Resources\Web.jpg" />
+    <None Include="Resources\Weli.jpg" />
+    <None Include="Resources\btnList.ico" />
+    <None Include="Resources\btnUpdate.ico" />
+    <None Include="Resources\Bulb.ico" />
+    <None Include="Resources\Computers.ico" />
+    <None Include="Resources\Error.ico" />
+    <None Include="Resources\icoMain.ico" />
+    <None Include="Resources\Inactive.ico" />
+    <None Include="Resources\NetDrives.ico" />
+    <None Include="Resources\planet.ico" />
+    <None Include="Resources\planet_asteroid.ico" />
+    <None Include="Resources\planet_blackhole.ico" />
+    <None Include="Resources\planet_earth.ico" />
+    <None Include="Resources\planet_jupiter.ico" />
+    <None Include="Resources\planet_mars.ico" />
+    <None Include="Resources\planet_mercury.ico" />
+    <None Include="Resources\planet_moon.ico" />
+    <None Include="Resources\planet_neptune.ico" />
+    <None Include="Resources\planet_pluto.ico" />
+    <None Include="Resources\planet_saturn.ico" />
+    <None Include="Resources\planet_sun.ico" />
+    <None Include="Resources\planet_supernova.ico" />
+    <None Include="Resources\planet_thanatos.ico" />
+    <None Include="Resources\planet_uranus.ico" />
+    <None Include="Resources\planet_venus.ico" />
+    <None Include="Resources\software-update.ico" />
+    <None Include="Resources\Finish.wav" />
+    <None Include="Resources\OptionPurple.xml" />
+    <None Include="Resources\OptionSearch.xml" />
+    <None Include="Resources\N01.png" />
+    <None Include="Resources\N02.png" />
+    <None Include="Resources\N03.png" />
+    <None Include="Resources\N04.png" />
+    <None Include="Resources\N05.png" />
+    <None Include="Resources\N06.png" />
+    <None Include="Resources\N07.png" />
+    <None Include="Resources\N08.png" />
+    <None Include="Resources\N09.png" />
+    <None Include="Resources\N10.png" />
+    <None Include="Resources\N11.png" />
+    <None Include="Resources\N12.png" />
+    <None Include="Resources\N13.png" />
+    <None Include="Resources\N14.png" />
+    <None Include="Resources\N15.png" />
+    <None Include="Resources\N16.png" />
+    <None Include="Resources\N17.png" />
+    <None Include="Resources\N18.png" />
+    <None Include="Resources\N19.png" />
+    <None Include="Resources\N20.png" />
+    <None Include="Resources\N21.png" />
+    <None Include="Resources\N22.png" />
+    <None Include="Resources\N23.png" />
+    <None Include="Resources\N24.png" />
+    <None Include="Resources\N25.png" />
+    <None Include="Resources\N26.png" />
+    <None Include="Resources\N27.png" />
+    <None Include="Resources\N28.png" />
+    <None Include="Resources\N29.png" />
+    <None Include="Resources\N30.png" />
+    <None Include="Resources\N31.png" />
+    <None Include="Resources\N32.png" />
+    <None Include="Resources\N33.png" />
+    <None Include="Resources\N34.png" />
+    <None Include="Resources\N35.png" />
+    <None Include="Resources\N36.png" />
+    <None Include="Resources\N37.png" />
+    <None Include="Resources\N38.png" />
+    <None Include="Resources\N39.png" />
+    <None Include="Resources\N40.png" />
+    <None Include="Resources\N41.png" />
+    <None Include="Resources\N42.png" />
+    <None Include="Resources\N43.png" />
+    <None Include="Resources\N44.png" />
+    <None Include="Resources\N45.png" />
+    <None Include="Resources\N46.png" />
+    <None Include="Resources\N47.png" />
+    <None Include="Resources\N48.png" />
+    <None Include="Resources\N49.png" />
+    <Content Include="Resources\btncancel.png" />
+    <Content Include="Resources\down.gif" />
+    <Content Include="Resources\up.gif" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\glScript.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.color-2.1.2.js" />
+    <Content Include="Scripts\jquery.color-2.1.2.min.js" />
+    <Content Include="Scripts\jquery.color.svg-names-2.1.2.js" />
+    <Content Include="Scripts\jquery.color.svg-names-2.1.2.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="MasterPages\Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="MasterPages\Site.Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Pages\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataNB.aspx.cs">
+      <DependentUpon>DataNB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataNB.aspx.designer.cs">
+      <DependentUpon>DataNB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataN02.aspx.cs">
+      <DependentUpon>DataN02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataN02.aspx.designer.cs">
+      <DependentUpon>DataN02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActive01H.aspx.cs">
+      <DependentUpon>FreqActive01H.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActive01H.aspx.designer.cs">
+      <DependentUpon>FreqActive01H.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActive03.aspx.cs">
+      <DependentUpon>FreqActive03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActive03.aspx.designer.cs">
+      <DependentUpon>FreqActive03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActive02.aspx.cs">
+      <DependentUpon>FreqActive02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActive02.aspx.designer.cs">
+      <DependentUpon>FreqActive02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActive01.aspx.cs">
+      <DependentUpon>FreqActive01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActive01.aspx.designer.cs">
+      <DependentUpon>FreqActive01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataN01.aspx.cs">
+      <DependentUpon>DataN01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataN01.aspx.designer.cs">
+      <DependentUpon>DataN01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataNChart.aspx.cs">
+      <DependentUpon>DataNChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataNChart.aspx.designer.cs">
+      <DependentUpon>DataNChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataN.aspx.cs">
+      <DependentUpon>DataN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DataN.aspx.designer.cs">
+      <DependentUpon>DataN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActiveChart01.aspx.cs">
+      <DependentUpon>FreqActiveChart01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActiveChart01.aspx.designer.cs">
+      <DependentUpon>FreqActiveChart01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TableDelete.aspx.cs">
+      <DependentUpon>TableDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TableDelete.aspx.designer.cs">
+      <DependentUpon>TableDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActiveChart.aspx.cs">
+      <DependentUpon>FreqActiveChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActiveChart.aspx.designer.cs">
+      <DependentUpon>FreqActiveChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqActive.aspx.cs">
+      <DependentUpon>FreqActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqActive.aspx.designer.cs">
+      <DependentUpon>FreqActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cacul01.aspx.cs">
+      <DependentUpon>Cacul01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cacul01.aspx.designer.cs">
+      <DependentUpon>Cacul01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqSet.aspx.cs">
+      <DependentUpon>FreqSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqSet.aspx.designer.cs">
+      <DependentUpon>FreqSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShowAll.aspx.cs">
+      <DependentUpon>ShowAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShowAll.aspx.designer.cs">
+      <DependentUpon>ShowAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TablePercent02.aspx.cs">
+      <DependentUpon>TablePercent02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TablePercent02.aspx.designer.cs">
+      <DependentUpon>TablePercent02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TablePercent01.aspx.cs">
+      <DependentUpon>TablePercent01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TablePercent01.aspx.designer.cs">
+      <DependentUpon>TablePercent01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TablePercent.aspx.cs">
+      <DependentUpon>TablePercent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TablePercent.aspx.designer.cs">
+      <DependentUpon>TablePercent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SumResult.aspx.cs">
+      <DependentUpon>SumResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SumResult.aspx.designer.cs">
+      <DependentUpon>SumResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MissingTotal.aspx.cs">
+      <DependentUpon>MissingTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MissingTotal.aspx.designer.cs">
+      <DependentUpon>MissingTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SmartTestResult.aspx.cs">
+      <DependentUpon>SmartTestResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SmartTestResult.aspx.designer.cs">
+      <DependentUpon>SmartTestResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FreqResult.aspx.cs">
+      <DependentUpon>FreqResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FreqResult.aspx.designer.cs">
+      <DependentUpon>FreqResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Related.aspx.cs">
+      <DependentUpon>Related.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Related.aspx.designer.cs">
+      <DependentUpon>Related.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Update.aspx.designer.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UpdateResult.aspx.cs">
+      <DependentUpon>UpdateResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UpdateResult.aspx.designer.cs">
+      <DependentUpon>UpdateResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Browsers\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="ViewStateFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GalaxyLottoClassLibrary\GalaxyLottoClassLibrary.csproj">
+      <Project>{b12c092a-6b24-45ea-86aa-24d9e73d3669}</Project>
+      <Name>GalaxyLottoClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>planet.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ellischu.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55227</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55227/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost:1003</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 封裝。請啟用 NuGet 封裝還原，以下載該封裝。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿[*.cs]
+
+# CA1707: 識別項不應包含底線
+dotnet_diagnostic.CA1707.severity = none
+
+# IDE0063: 使用簡單的 'using' 陳述式
+csharp_prefer_simple_using_statement = true:suggestion
+
+dotnet_code_quality.CA2100.excluded_symbol_names = MySqlCommand
+
+# Default severity for analyzer diagnostics with category 'Reliability'
+dotnet_analyzer_diagnostic.category-Reliability.severity = none

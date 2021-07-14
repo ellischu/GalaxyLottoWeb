@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bgFlower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgFlower.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgGreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgKid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgKid.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgUpdate.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgYellowflowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgYellowflowers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Big.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnclose00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnclose00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnclose01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnclose01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnclose02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnclose02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnclose03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnclose03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCloseRedBig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCloseRedBig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCloseRedSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCloseRedSmall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnDownarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnDownarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnFilecabinet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnFilecabinet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnFullView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnFullView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnHelp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnHelp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnHelp01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnHelp01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnList1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnList.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMaxBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnMaxBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMinBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnMinBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnMinBlue01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnMinBlue01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRelation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnRelation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSearch .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUparrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUparrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUpdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUpdate02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUpdate02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnUpdate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnUpdate.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bulb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bulb.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Computers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Computers.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dafu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dafu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dot_green_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dot-green-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dot_red_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dot-red-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Error.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finish.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icoMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icoMain.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Inactive.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="l539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\l539.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NetDrives" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NetDrives.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OptionPurple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OptionPurple.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OptionSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OptionSearch.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="planet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_asteroid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_asteroid.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_blackhole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_blackhole.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_earth.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_jupiter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_jupiter.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_mars.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_mercury" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_mercury.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_moon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_neptune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_neptune.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_pluto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_pluto.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_saturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_saturn.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_sun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_sun.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_supernova" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_supernova.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_thanatos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_thanatos.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_uranus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_uranus.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_venus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\planet_venus.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Six" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Six.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="software_update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\software-update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="software_update1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\software-update.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spe.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Web" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Web.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Weli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Weli.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\N49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultCriticalNumValue" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="defaultDataLimitValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultDataOffsetValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultDataRowsLimitValue" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="defaultDisplayPeriodValue" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="defaultSearchLimitValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultSearchLimitValue01" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="defaultSearchOffsetValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultTestPeriodsValue" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="btnNextPage" xml:space="preserve">
+    <value> &gt; </value>
+  </data>
+  <data name="btnNext10Page" xml:space="preserve">
+    <value> &gt;&gt; </value>
+  </data>
+  <data name="btnPrevPage" xml:space="preserve">
+    <value> &lt; </value>
+  </data>
+  <data name="btnPrev10Page" xml:space="preserve">
+    <value> &lt;&lt; </value>
+  </data>
+  <data name="PageCacul01" xml:space="preserve">
+    <value>Cacul01.aspx</value>
+  </data>
+  <data name="PageDataN" xml:space="preserve">
+    <value>DataN.aspx</value>
+  </data>
+  <data name="PageDataNBT01" xml:space="preserve">
+    <value>DataNBT01.aspx</value>
+  </data>
+  <data name="PageFreqActive" xml:space="preserve">
+    <value>FreqActive.aspx</value>
+  </data>
+  <data name="PageFreqActive01" xml:space="preserve">
+    <value>FreqActive01.aspx</value>
+  </data>
+  <data name="PageFreqActive02" xml:space="preserve">
+    <value>FreqActive02.aspx</value>
+  </data>
+  <data name="PageFreqActive03" xml:space="preserve">
+    <value>FreqActive03.aspx</value>
+  </data>
+  <data name="PageFreqActiveChart" xml:space="preserve">
+    <value>FreqActiveChart.aspx</value>
+  </data>
+  <data name="PageFreqResult" xml:space="preserve">
+    <value>FreqResult.aspx</value>
+  </data>
+  <data name="PageFreqSet" xml:space="preserve">
+    <value>FreqSet.aspx</value>
+  </data>
+  <data name="PageMissingTotal" xml:space="preserve">
+    <value>MissingTotal.aspx</value>
+  </data>
+  <data name="PageOddEven" xml:space="preserve">
+    <value>OddEven.aspx</value>
+  </data>
+  <data name="PageShowAll" xml:space="preserve">
+    <value>ShowAll.aspx</value>
+  </data>
+  <data name="PageSmartRun" xml:space="preserve">
+    <value>SmartRun.aspx</value>
+  </data>
+  <data name="PageSmartTest" xml:space="preserve">
+    <value>SmartTestResult.aspx</value>
+  </data>
+  <data name="PageSum" xml:space="preserve">
+    <value>SumResult.aspx</value>
+  </data>
+  <data name="PageTablePercent" xml:space="preserve">
+    <value>TablePercent.aspx</value>
+  </data>
+  <data name="PageTablePercent01" xml:space="preserve">
+    <value>TablePercent01.aspx</value>
+  </data>
+  <data name="PageTablePercent02" xml:space="preserve">
+    <value>TablePercent02.aspx</value>
+  </data>
+  <data name="SessionsCacul01" xml:space="preserve">
+    <value>sCacul01</value>
+  </data>
+  <data name="SessionsDataN" xml:space="preserve">
+    <value>sDataN</value>
+  </data>
+  <data name="SessionsDataNBT01" xml:space="preserve">
+    <value>sDataNBT01</value>
+  </data>
+  <data name="SessionsFreqResult" xml:space="preserve">
+    <value>sFreqResult</value>
+  </data>
+  <data name="SessionsFreqActive" xml:space="preserve">
+    <value>sFreqActive</value>
+  </data>
+  <data name="SessionsFreqActive01" xml:space="preserve">
+    <value>sFreqActive01</value>
+  </data>
+  <data name="SessionsFreqActive02" xml:space="preserve">
+    <value>sFreqActive02</value>
+  </data>
+  <data name="SessionsFreqActive03" xml:space="preserve">
+    <value>sFreqActive03</value>
+  </data>
+  <data name="SessionsFreqActiveChart" xml:space="preserve">
+    <value>sFreqActiveChart</value>
+  </data>
+  <data name="SessionsFreqSet" xml:space="preserve">
+    <value>sFreqSet</value>
+  </data>
+  <data name="SessionsMissingTotal" xml:space="preserve">
+    <value>sMissingTotal</value>
+  </data>
+  <data name="SessionsOddEven" xml:space="preserve">
+    <value>sOddEven</value>
+  </data>
+  <data name="SessionsShowAll" xml:space="preserve">
+    <value>sShowAll</value>
+  </data>
+  <data name="SessionsSmartRun" xml:space="preserve">
+    <value>sSmartRun</value>
+  </data>
+  <data name="SessionsSmartTest" xml:space="preserve">
+    <value>sSmartTest</value>
+  </data>
+  <data name="SessionsSum" xml:space="preserve">
+    <value>sSum</value>
+  </data>
+  <data name="SessionsTablePercent" xml:space="preserve">
+    <value>sTablePercent</value>
+  </data>
+  <data name="SessionsTablePercent01" xml:space="preserve">
+    <value>sTP01</value>
+  </data>
+  <data name="SessionsTablePercent02" xml:space="preserve">
+    <value>sTP02</value>
+  </data>
+  <data name="SessionsUpdate" xml:space="preserve">
+    <value>sUpdate</value>
+  </data>
+  <data name="SessionsDataB" xml:space="preserve">
+    <value>sDataB</value>
+  </data>
+  <data name="PageDataB" xml:space="preserve">
+    <value>DataB.aspx</value>
+  </data>
+  <data name="PageFreqActiveChart01" xml:space="preserve">
+    <value>FreqActiveChart01.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveChart01" xml:space="preserve">
+    <value>sFreqActiveChart01</value>
+  </data>
+  <data name="PageFreqActiveHT" xml:space="preserve">
+    <value>FreqActiveHT.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveHT" xml:space="preserve">
+    <value>sFreqActiveHT</value>
+  </data>
+  <data name="lblLottos" xml:space="preserve">
+    <value>樂　透</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>請選擇</value>
+  </data>
+  <data name="defaultFilterMaxValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultFilterMinValue" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultHistoryPeriodsValue" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="defaultHistoryTestPeriodsValue" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="defaultHitMinValue" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PageFreqActiveH" xml:space="preserve">
+    <value>FreqActiveH.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveH" xml:space="preserve">
+    <value>sFreqActiveH</value>
+  </data>
+  <data name="PageFreqResultT" xml:space="preserve">
+    <value>FreqResultT.aspx</value>
+  </data>
+  <data name="SessionsFreqResultT" xml:space="preserve">
+    <value>sFreqResultT</value>
+  </data>
+  <data name="tblFreqSecHisFilter" xml:space="preserve">
+    <value>[tblFreqSecHisFilter]</value>
+  </data>
+  <data name="Filter_Filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filter-Filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filter_NoFilled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filter-NoFilled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ascending" xml:space="preserve">
+    <value>遞增</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>確定</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>遞減</value>
+  </data>
+  <data name="lblCaption" xml:space="preserve">
+    <value>別名</value>
+  </data>
+  <data name="lblColumn" xml:space="preserve">
+    <value>資料行</value>
+  </data>
+  <data name="lblSort" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="lblSortOrder" xml:space="preserve">
+    <value>排序次序</value>
+  </data>
+  <data name="lblWhere" xml:space="preserve">
+    <value>篩選</value>
+  </data>
+  <data name="Unspecified" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="btnNext10PageTip" xml:space="preserve">
+    <value>下十頁</value>
+  </data>
+  <data name="btnNextPageTip" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="btnPrev10PageTip" xml:space="preserve">
+    <value>上十頁</value>
+  </data>
+  <data name="btnPrevPageTip" xml:space="preserve">
+    <value>上一頁</value>
+  </data>
+  <data name="lblColumnDataType" xml:space="preserve">
+    <value>資料型態</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>篩選</value>
+  </data>
+  <data name="NoFilter" xml:space="preserve">
+    <value>取消篩選</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>重載</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="PageFreqResultSingle" xml:space="preserve">
+    <value>FreqResultSingle.aspx</value>
+  </data>
+  <data name="SessionsFreqResultSingle" xml:space="preserve">
+    <value>sFreqResultSingle</value>
+  </data>
+  <data name="PageFreqActiveHSingle" xml:space="preserve">
+    <value>FreqActiveHSingle.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveHSingle" xml:space="preserve">
+    <value>sFreqActiveHSingle</value>
+  </data>
+  <data name="ReCaculate" xml:space="preserve">
+    <value>重算</value>
+  </data>
+  <data name="PageFreqActiveHT01" xml:space="preserve">
+    <value>FreqActiveHT01.aspx</value>
+  </data>
+  <data name="PageFreqActiveHT02" xml:space="preserve">
+    <value>FreqActiveHT02.aspx</value>
+  </data>
+  <data name="PageFreqActiveHTAll" xml:space="preserve">
+    <value>FreqActiveHTAll.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveHT01" xml:space="preserve">
+    <value>sFreqActiveHT01</value>
+  </data>
+  <data name="SessionsFreqActiveHT02" xml:space="preserve">
+    <value>sFreqActiveHT02</value>
+  </data>
+  <data name="SessionsFreqActiveHTAll" xml:space="preserve">
+    <value>sFreqActiveHTAll</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>資料處理中 ...</value>
+  </data>
+  <data name="finished" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finished.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pause.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="analyst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analyst.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageFreqActiveHT01P" xml:space="preserve">
+    <value>FreqActiveHT01P.aspx</value>
+  </data>
+  <data name="SessionsFreqActiveHT01P" xml:space="preserve">
+    <value>sFreqActiveHT01P</value>
+  </data>
+  <data name="PageMissingTotalT" xml:space="preserve">
+    <value>MissingTotalT.aspx</value>
+  </data>
+  <data name="SessionsMissingTotalT" xml:space="preserve">
+    <value>sMissingTotalT</value>
+  </data>
+  <data name="PageFreqDNA" xml:space="preserve">
+    <value>FreqDNA.aspx</value>
+  </data>
+  <data name="SessionsFreqDNA" xml:space="preserve">
+    <value>sFreqDNA</value>
+  </data>
+  <data name="defaultFreqDNALength" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="defaultTargetTestPeriods" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="PageFreqDNAT" xml:space="preserve">
+    <value>FreqDNAT.aspx</value>
+  </data>
+  <data name="SessionsFreqDNAT" xml:space="preserve">
+    <value>sFreqDNAT</value>
+  </data>
+  <data name="PageFreqSecField" xml:space="preserve">
+    <value>FreqSecField.aspx</value>
+  </data>
+  <data name="PageFreqSecFieldT" xml:space="preserve">
+    <value>FreqSecFieldT.aspx</value>
+  </data>
+  <data name="SessionsFreqSecField" xml:space="preserve">
+    <value>sFreqSecField</value>
+  </data>
+  <data name="SessionsFreqSecFieldT" xml:space="preserve">
+    <value>sFreqSecFieldT</value>
+  </data>
+  <data name="PageFreqActive01T" xml:space="preserve">
+    <value>FreqActive01T.aspx</value>
+  </data>
+  <data name="SessionsFreqActive01T" xml:space="preserve">
+    <value>sFreqActive01T</value>
+  </data>
+  <data name="defaultNextNums" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="defaultNextStep" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PageMissingTotalT01" xml:space="preserve">
+    <value>MissingTotalT01.aspx</value>
+  </data>
+  <data name="SessionsMissingTotalT01" xml:space="preserve">
+    <value>sMissingTotalT01</value>
+  </data>
+  <data name="HtmlSpace" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="scrollnew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scrollnew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabelFreqResult" xml:space="preserve">
+    <value>頻率(G)</value>
+  </data>
+  <data name="LabelFreqResultSingle" xml:space="preserve">
+    <value>頻率單(G)</value>
+  </data>
+  <data name="LabelCacul01" xml:space="preserve">
+    <value>綜合計算01(G)</value>
+  </data>
+  <data name="LabelDataB" xml:space="preserve">
+    <value>平衡表(G)</value>
+  </data>
+  <data name="LabelDataN" xml:space="preserve">
+    <value>振盪表(G)</value>
+  </data>
+  <data name="LabelDataNBT01" xml:space="preserve">
+    <value>振盪平衡總表01(G)</value>
+  </data>
+  <data name="LabelFreqActive" xml:space="preserve">
+    <value>活性表(G)</value>
+  </data>
+  <data name="LabelFreqActive01" xml:space="preserve">
+    <value>活性表01(G)</value>
+  </data>
+  <data name="LabelFreqActive01T" xml:space="preserve">
+    <value>活性表01總表(G)</value>
+  </data>
+  <data name="LabelFreqActive02" xml:space="preserve">
+    <value>活性表02(G)</value>
+  </data>
+  <data name="LabelFreqActive03" xml:space="preserve">
+    <value>活性表03(G)</value>
+  </data>
+  <data name="LabelFreqActiveChart" xml:space="preserve">
+    <value>活性圖(G)</value>
+  </data>
+  <data name="LabelFreqActiveChart01" xml:space="preserve">
+    <value>活性圖01(G)</value>
+  </data>
+  <data name="LabelFreqActiveH" xml:space="preserve">
+    <value>活性歷史表(G)</value>
+  </data>
+  <data name="LabelFreqActiveHSingle" xml:space="preserve">
+    <value>活性歷史表單(G)</value>
+  </data>
+  <data name="LabelFreqActiveHT" xml:space="preserve">
+    <value>活性歷史總表(G)</value>
+  </data>
+  <data name="LabelFreqActiveHT01" xml:space="preserve">
+    <value>活性歷史總表01(G)</value>
+  </data>
+  <data name="LabelFreqActiveHT01P" xml:space="preserve">
+    <value>活性歷史總表01(預載)(G)</value>
+  </data>
+  <data name="LabelFreqActiveHT02" xml:space="preserve">
+    <value>活性歷史總表02(G)</value>
+  </data>
+  <data name="LabelFreqActiveHTAll" xml:space="preserve">
+    <value>活性歷史總表All(G)</value>
+  </data>
+  <data name="LabelFreqDNA" xml:space="preserve">
+    <value>數字DNA(G)</value>
+  </data>
+  <data name="LabelFreqDNAT" xml:space="preserve">
+    <value>DNA整合表(G)</value>
+  </data>
+  <data name="LabelFreqResultT" xml:space="preserve">
+    <value>頻率總表(G)</value>
+  </data>
+  <data name="LabelFreqSecField" xml:space="preserve">
+    <value>數字區間(G)</value>
+  </data>
+  <data name="LabelFreqSecFieldT" xml:space="preserve">
+    <value>數字區間整合表(G)</value>
+  </data>
+  <data name="LabelFreqSet" xml:space="preserve">
+    <value>頻率組(G)</value>
+  </data>
+  <data name="LabelHighLow" xml:space="preserve">
+    <value>大-小數表(G)</value>
+  </data>
+  <data name="LabelMissingTotal" xml:space="preserve">
+    <value>遺漏表(G)</value>
+  </data>
+  <data name="LabelMissingTotalT" xml:space="preserve">
+    <value>遺漏整合表(G)</value>
+  </data>
+  <data name="LabelMissingTotalT01" xml:space="preserve">
+    <value>遺漏整合表01(G)</value>
+  </data>
+  <data name="LabelOddEven" xml:space="preserve">
+    <value>奇-偶數表(G)</value>
+  </data>
+  <data name="LabelSmartRun" xml:space="preserve">
+    <value>計算組合(G)</value>
+  </data>
+  <data name="LabelSmartTest" xml:space="preserve">
+    <value>聰明組合(G)</value>
+  </data>
+  <data name="LabelSum" xml:space="preserve">
+    <value>和數表(G)</value>
+  </data>
+  <data name="LabelTablePercent" xml:space="preserve">
+    <value>TP00(G)</value>
+  </data>
+  <data name="LabelTablePercent01" xml:space="preserve">
+    <value>TP01(G)</value>
+  </data>
+  <data name="LabelTablePercent02" xml:space="preserve">
+    <value>TP02(G)</value>
+  </data>
+  <data name="Button_Icon_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Black.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_BlueSky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_BlueSky.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Blue.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Brown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Brown.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Cyan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Cyan.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Fuchsia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Fuchsia.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_GreenBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_GreenBlue.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_GreenForest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_GreenForest.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_GreenYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_GreenYellow.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Green.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Lime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Lime.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Orange.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Pink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Pink.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Purple.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Red.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Turquoise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Turquoise.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Violet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Violet.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_White.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Button_Icon_Yellow.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button_Icon_LightRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Redbutton.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabelFreqActive01TR" xml:space="preserve">
+    <value>活性表01R總表(G)</value>
+  </data>
+  <data name="PageFreqActive01TR" xml:space="preserve">
+    <value>FreqActive01TR.aspx</value>
+  </data>
+  <data name="SessionsFreqActive01TR" xml:space="preserve">
+    <value>sFreqActive01TR</value>
+  </data>
+  <data name="LabelDataNChart" xml:space="preserve">
+    <value>振盪圖(G)</value>
+  </data>
+  <data name="PageDataNChart" xml:space="preserve">
+    <value>DataNChart.aspx</value>
+  </data>
+  <data name="SessionsDataNChart" xml:space="preserve">
+    <value>sDataNChart</value>
+  </data>
+</root>

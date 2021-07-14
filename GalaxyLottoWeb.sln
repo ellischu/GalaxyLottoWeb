@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyLottoWeb", "GalaxyLottoWeb\GalaxyLottoWeb.csproj", "{7ACF5207-9166-4457-B788-420C9D60AC75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyLottoClassLibrary", "..\GalaxyLottoClassLibrary\GalaxyLottoClassLibrary.csproj", "{B12C092A-6B24-45EA-86AA-24D9E73D3669}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9017EB1-7645-45B8-8514-4B6D17EE12E7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Debug|x64.Build.0 = Debug|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Release|x64.ActiveCfg = Release|Any CPU
+		{7ACF5207-9166-4457-B788-420C9D60AC75}.Release|x64.Build.0 = Release|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Debug|x64.Build.0 = Debug|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Release|x64.ActiveCfg = Release|Any CPU
+		{B12C092A-6B24-45EA-86AA-24D9E73D3669}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB2AF505-12A0-4742-9877-DB4574CDFE47}
+	EndGlobalSection
+EndGlobal

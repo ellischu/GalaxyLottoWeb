@@ -1,0 +1,985 @@
+select {
+    text-align-last: center;
+}
+
+option {
+    text-align: center;
+}
+
+caption {
+    color: darkred;
+    text-align: left;
+    font-weight: bolder;
+    font-size: large;
+}
+
+details {
+    font-size: large;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: #ffffff;
+    border: 1px solid #ffd800;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.glbody {
+    padding-top: 2px;
+    font-family: "Microsoft JhengHei UI";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #fff;
+}
+
+.glLottoName {
+    background-color: #fcf3fc;
+    color: #800080;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+.glLottoDate {
+    background-color: #eaffd3;
+    color: #800080;
+    padding: 3px;
+    margin: 0;
+    font-size: large;
+}
+
+.glclosefix {
+    position: fixed;
+    top: 260px;
+    left: 5px;
+    z-index: 990;
+}
+
+.glTopdatafix {
+    position: fixed;
+    top: 30px;
+    background-color: black;
+    color: white;
+    z-index: 990;
+    overflow: hidden;
+    width: 80%;
+    border: 1px solid green;
+}
+
+/*.glTopdatafix:hover {
+        height: 220px;
+        width: 95%;
+        overflow: auto;
+        animation-duration: 1s;
+    }*/
+
+.glFilterfix {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    z-index: 989;
+    color: white;
+    background-color: rgb(17, 16, 1);
+    width: 900px;
+    height: 600px;
+    margin-left: -450px;
+    margin-top: -300px;
+    border: 5px solid darkred;
+    display: block;
+}
+
+#UpdateProgress1, #UpdateProgress2 {
+    width: 200px;
+    background-color: #FFC080;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.glcurrentdata {
+    color: darkblue;
+    text-align: center;
+    /*margin-top: 30px;
+    margin-left: 20px;
+    background-color: white;*/
+}
+
+.glcurrentdatafix {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.96);
+    z-index: 990;
+    margin-left: 20px;
+    overflow: hidden;
+    height: 30px;
+    width: 10px;
+    border: 1px solid green;
+}
+
+    .glcurrentdatafix:hover {
+        height: 180px;
+        width: 95%;
+        overflow: auto;
+    }
+
+.glsearch-title-even {
+    color: #FFFFFF;
+    background-color: #336699;
+    border-color: #46b8da;
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.glsearch-title-odd {
+    color: #FFFFFF;
+    background-color: #006600;
+    border-color: #46b8da;
+    font-size: large;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.glsearch-content {
+    color: #000000;
+    background-color: #545454;
+    border-color: #46b8da;
+    border: 1px solid #A4A4A4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: large;
+}
+
+.glsearch-title-even:hover, .glsearch-title-odd:hover {
+    background-color: #800080;
+}
+
+.gllabel {
+	 color: white;
+    font-size: medium;
+    background-color: #545454;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.gllabelred {
+    font-size: large;
+    background-color: rgba(250, 115, 115, 0.44);
+    vertical-align: middle;
+    letter-spacing: 1px;
+    margin-left: 25px;
+}
+
+.glpanelblue {
+    background-color: rgba(175, 239, 250, 0.20)
+}
+
+.glpanelgreen {
+    background-color: rgba(15, 79, 0, 0.15)
+}
+
+.gllabelwide {
+    font-size: large;
+    background-color: #c9e2ee;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.gldropdownlist {
+    font-size: large;
+    color: #800000;
+    background-color: #f4fcec;
+    border-width: 0;
+    border-style: none;
+    list-style-type: disc;
+    vertical-align: middle;
+}
+
+    .gldropdownlist:hover, .glcheck:hover, .glbutton:hover {
+        background-color: mintcream;
+    }
+
+
+.glcheck {
+    font-size: large;
+    vertical-align: middle;
+}
+
+.glcheck-print {
+    vertical-align: middle;
+}
+
+.glcheck > label {
+    font-weight: normal;
+    background-color: #c9e2ee;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.glBlock {
+    display: block;
+}
+
+.glclear {
+    vertical-align: middle;
+    opacity: 0.2;
+    height: 25px;
+    width: 25px;
+}
+
+.glinformation {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+}
+
+.glclear:hover {
+    opacity: 1;
+}
+/*button*/
+.glbutton {
+    margin: 5px;
+    /*padding: 5px;*/
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: #EFEFEF #A4A4A4 #A4A4A4 #EFEFEF;
+    border-radius: 6px;
+    min-width: 50px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .glbutton:disabled {
+        background-color: lightgrey;
+        color: white;
+    }
+
+.glbutton-grey {
+    background-color: #A4A4A4;
+    background-color: rgba(208, 207, 207, 0.70);
+    color: black;
+}
+
+    .glbutton-grey:hover {
+        background-color: #75e7f7;
+        background-color: rgba(207, 235, 246, 0.70);
+        color: blue;
+    }
+
+.glbutton-black-lightblue {
+    background-color: black;
+    color: lightblue;
+    border-color: lightblue;
+}
+
+.glbutton-black-lightpink {
+    background-color: black;
+    color: lightpink;
+    border-color: lightpink;
+}
+
+.glbutton-red {
+    background-color: red;
+    color: white;
+}
+
+    .glbutton-red:hover {
+        background-color: white;
+        color: red;
+    }
+
+.glbutton-blue {
+    background-color: #3533fb;
+    color: white;
+}
+
+    .glbutton-blue:hover {
+        background-color: white;
+        color: #3533fb;
+    }
+
+.glbutton-lightblue {
+    vertical-align: top;
+    color: white;
+    background-color: #47cef6;
+}
+
+    .glbutton-lightblue:hover {
+        color: #3533fb;
+        background-color: #289be8;
+    }
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid blue !important;
+    border-top: 2px solid blue !important;
+}
+
+td:hover, th:hover {
+    /*background-color: green !important;
+    background-color: rgba(88, 0, 255, 0.05) !important;*/
+    border: 2px solid red;
+}
+
+.gltable, .gltableleft {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    text-size-adjust: auto;
+}
+
+    .gltable > tbody > tr > th,
+    .gltable > tbody > tr > td,
+    .gltableleft > tbody > tr > th {
+        text-align: center;
+    }
+
+    .gltable > tbody > tr:nth-of-type(odd),
+    .gltableleft > tbody > tr:nth-of-type(odd) {
+        background-color: rgba(117, 117, 117, 0.05);
+    }
+
+.gltext {
+    vertical-align: middle;
+}
+
+.gltext_center {
+    text-align: center;
+}
+
+.glcalculate_options {
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid #ebcb14;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.glresult {
+    top: 0px;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.max-width {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.glColumn1 {
+    min-width: 60px;
+    display: block;
+    float: left;
+}
+
+.glColumn1750 {
+    min-width: 60px;
+    display: block;
+    float: left;
+    overflow: auto;
+    height: 830px;
+}
+
+.glbuttons {
+    margin-left: 20px;
+    max-width: 1100px;
+    min-height: 65px;
+    overflow-wrap: normal;
+    float: left;
+    overflow: auto;
+}
+
+.glColumn750 {
+    width: 100%;
+    overflow: auto;
+    display: block;
+    float: left;
+    height: 830px;
+}
+
+.glColumn360 {
+    width: 95%;
+    overflow: auto;
+    display: block;
+    float: left;
+    height: 410px;
+}
+/*row color*/
+.row_lightseagreen {
+    background-color: lightseagreen;
+    background-color: rgba(1, 143, 43, 0.70);
+}
+
+.row_lightskyblue {
+    background-color: lightskyblue;
+    background-color: rgba(16, 198, 247, 0.70);
+}
+
+.row_lightpink {
+    background-color: lightpink;
+    background-color: rgba(251, 136, 136, 0.70);
+}
+
+.row_lightblue {
+    background-color: lightblue;
+    background-color: rgba(138, 154, 248, 0.70);
+}
+
+.row_yellow {
+    background-color: yellow;
+    background-color: rgba(227, 241, 47, 0.70);
+}
+
+.row_lightyellow {
+    background-color: lightyellow;
+    background-color: rgba(250, 251, 99, 0.70);
+}
+
+.row_lightgreen {
+    background-color: lightgreen;
+    background-color: rgba(95, 235, 74, 0.70);
+}
+
+.fontcolor_white {
+    color: white;
+}
+
+
+
+/*number*/
+
+.lngL1 {
+    background-color: rgba(255, 255, 153, 0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL2 {
+    background-color: rgba(204, 153, 255,0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL3 {
+    background-color: rgba(102, 255, 255,0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL4 {
+    background-color: rgba(255, 204, 255, 0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL5 {
+    background-color: rgba(102, 255, 51, 0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL6 {
+    background-color: rgba(144, 238, 144, 0.85);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngL7 {
+    background-color: rgba(204, 204, 204, 0.40);
+    color: #cc3300;
+    font-weight: bold;
+    border: solid 1px #cc3300;
+}
+
+.lngS1 {
+    background-color: rgba(255, 182, 193, 0.85);
+    color: #cc3300;
+    font-weight: bold;
+}
+
+.lngM0 {
+    background-color: #fff764;
+    background-color: rgba(255, 255, 153, 0.50);
+}
+
+.lngM1, .lngN1 {
+    background-color: darkgreen;
+    background-color: rgba(35, 130, 35, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM2, .lngN2 {
+    background-color: darkblue;
+    background-color: rgba(24, 54, 170, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM3, .lngN3 {
+    background-color: brown;
+    background-color: rgba(200, 9, 9, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM4, .lngN4 {
+    background-color: purple;
+    background-color: rgba(217, 21, 201, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM5, .lngN5 {
+    background-color: darkred;
+    background-color: rgba(94, 0, 0, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM6, .lngN6 {
+    background-color: mediumpurple;
+    background-color: rgba(100, 2, 100, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+.lngM7, .lngN7 {
+    background-color: olivedrab;
+    background-color: rgba(38, 165, 76, 0.85);
+    color: yellow;
+    font-weight: bold;
+}
+
+    .lngM1 > a, .lngM2 > a, .lngM3 > a, .lngM4 > a,
+    .lngM5 > a, .lngM6 > a, .lngM7 > a {
+        color: yellow;
+    }
+
+.intSum {
+    background-color: aquamarine;
+    background-color: rgba(172, 248, 214, 0.70);
+    border-right: 2px solid brown;
+    border-left: 2px solid brown;
+}
+
+    .intSum:hover {
+        background-color: lightgreen;
+        background-color: rgb(85, 251, 177);
+    }
+
+/*options*/
+.Title {
+    background-color: #7e7e7e;
+    color: white;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px 1px rgb(81, 191, 255);
+}
+
+.lngYearSN, .lngDateSN, .strSN, .lngMethodSN, .lngSearchMethodSN, .lngSecFieldSN {
+    background-color: cornsilk;
+    background-color: rgba(255, 236, 202, 0.85);
+}
+
+.lngTotalSN {
+    color: #fa0d0d;
+    color: rgba(252, 6, 6, 0.85);
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.strYearT1, .strYearT2, .strMonthT1, .strMonthT2,
+.strDayT1, .strDayT2, .strHourT, .strDayFive, .strDayTwelve,
+.strDayNine, .strDayTwentyEight, .strHourTwentyEight, .strDayEight,
+.intHistoryTestPeriods {
+    background-color: lightpink;
+    background-color: rgba(243, 202, 251, 0.85);
+}
+
+.strp01, .strp02, .strp03, .strp04, .strp05,
+.strp06, .strp07, .strp08, .strp09, .strp10,
+.strp11, .strp12, .strp13,
+.intNumCount {
+    background-color: lightgoldenrodyellow;
+    background-color: rgba(231, 254, 183, 0.85);
+}
+
+.glMonday {
+    /*color: blue;*/
+    /*font-style: italic;*/
+    border-bottom-color: yellow;
+    background-color: rgba(255, 255, 0, 0.05) !important;
+}
+
+.glTuesday {
+    /*color: blueviolet;*/
+    /*font-style: italic;*/
+    border-bottom-color: pink;
+    background-color: rgba(237, 0, 255, 0.05) !important;
+}
+
+.glWednesday {
+    /*color: brown;*/
+    /*font-style: italic;*/
+    border-bottom-color: green;
+    background-color: rgba(0, 128, 0, 0.05) !important;
+}
+
+.glThursday {
+    /*color: orangered;*/
+    /*font-style: italic;*/
+    border-bottom-color: orange;
+    background-color: rgba(255, 70, 0, 0.05) !important;
+}
+
+.glFriday {
+    /*color: deeppink;*/
+    /*font-style: italic;*/
+    border-bottom-color: blue;
+    background-color: rgba(40, 155, 232, 0.05) !important;
+}
+
+.glSaturday {
+    /*color: green;*/
+    /*font-style: italic;*/
+    border-bottom-color: purple;
+    background-color: rgba(128, 0, 128, 0.05) !important;
+}
+
+.glSunday {
+    /*color: red;*/
+    /*font-style: italic;*/
+    border-bottom-color: red;
+    background-color: rgba(255, 0, 0, 0.05) !important;
+}
+
+.sglAvg, .sglTPA, .sglAvg1, .sglStdEvp1, .sglAvg2, .sglStdEvp2, .sglAvg3, .sglStdEvp3,
+.sglAvg4, .sglStdEvp4, .sglAvg5, .sglStdEvp5, .sglAvg6, .sglStdEvp6, .sglAvg7, .sglStdEvp7,
+.sglAvgGap, .sglTPAGap, .sglAvgGap1, .sglStdEvpGap1, .sglAvgGap2, .sglStdEvpGap2, .sglAvgGap3, .sglStdEvpGap3,
+.sglAvgGap4, .sglStdEvpGap4, .sglAvgGap5, .sglStdEvpGap5, .sglAvgGap6, .sglStdEvpGap6, .sglAvgGap7, .sglStdEvpGap7,
+.intMin1, .intMax1, .intMin2, .intMax2, .intMin3, .intMax3, .intMin4, .intMax4,
+.intMin5, .intMax5, .intMin6, .intMax6, .intMin7, .intMax7 {
+    background-color: white;
+    background-color: rgba(215, 237, 255, 0.70);
+}
+
+    .sglAvg:hover, .sglTPA:hover {
+        background-color: rgb(181, 218, 248);
+    }
+
+.intMin1, .intMin2, .intMin3, .intMin4, .intMin5, .intMin6, .intMin7,
+.intMin, .intMin205, .intMin305, .intMin405, .intMin505, .intMin605, .intMin705,
+.intMin110, .intMin210, .intMin310, .intMin410, .intMin510, .intMin610, .intMin710,
+.intMin125, .intMin225, .intMin325, .intMin425, .intMin525, .intMin625, .intMin725,
+.intMin150, .intMin250, .intMin350, .intMin450, .intMin550, .intMin650, .intMin750,
+.intMin1100, .intMin2100, .intMin3100, .intMin4100, .intMin5100, .intMin6100, .intMin7100 {
+    color: blue;
+    /*background-color: rgba(207, 191, 251, 0.80);*/
+}
+
+.intMax1, .intMax2, .intMax3, .intMax4, .intMax5, .intMax6, .intMax7,
+.intMax105, .intMax205, .intMax305, .intMax405, .intMax505, .intMax605, .intMax705,
+.intMax110, .intMax210, .intMax310, .intMax410, .intMax510, .intMax610, .intMax710,
+.intMax125, .intMax225, .intMax325, .intMax425, .intMax525, .intMax625, .intMax725,
+.intMax150, .intMax250, .intMax350, .intMax450, .intMax550, .intMax650, .intMax750,
+.intMax1100, .intMax2100, .intMax3100, .intMax4100, .intMax5100, .intMax6100, .intMax7100 {
+    color: brown;
+    /*background-color: rgba(207, 191, 251, 0.80);*/
+}
+
+.B105, .B110, .B125, .B150, .B1100,
+.sglAvgT1, .sglAvgT2, .sglAvgT3, .sglAvgT4, .sglAvgT5, .sglAvgT6, .sglAvgT7,
+.sglDisT1, .sglDisT2, .sglDisT3, .sglDisT4, .sglDisT5, .sglDisT6, .sglDisT7,
+.sglStdEvpT1, .sglStdEvpT2, .sglStdEvpT3, .sglStdEvpT4, .sglStdEvpT5, .sglStdEvpT6, .sglStdEvpT7,
+.sglAvgGapT1, .sglAvgGapT2, .sglAvgGapT3, .sglAvgGapT4, .sglAvgGapT5, .sglAvgGapT6, .sglAvgGapT7,
+.sglStdEvpGapT1, .sglStdEvpGapT2, .sglStdEvpGapT3, .sglStdEvpGapT4, .sglStdEvpGapT5, .sglStdEvpGapT6, .sglStdEvpGapT7,
+.intA05, .intAMax05,
+.sglAvg05, .sglStdEvp05, .sglAvg105, .sglStdEvp105, .sglAvg205, .sglStdEvp205, .sglAvg305, .sglStdEvp305,
+.sglAvg405, .sglStdEvp405, .sglAvg505, .sglStdEvp505, .sglAvg605, .sglStdEvp605, .sglAvg705, .sglStdEvp705,
+.sglAvgGap05, .sglStdEvpGap05, .sglAvgGap105, .sglStdEvpGap105, .sglAvgGap205, .sglStdEvpGap205, .sglAvgGap305, .sglStdEvpGap305,
+.sglAvgGap405, .sglStdEvpGap405, .sglAvgGap505, .sglStdEvpGap505, .sglAvgGap605, .sglStdEvpGap605, .sglAvgGap705, .sglStdEvpGap705,
+.intMin105, .intMax105, .intMin205, .intMax205, .intMin305, .intMax305, .intMin405, .intMax405,
+.intMin505, .intMax505, .intMin605, .intMax605, .intMin705, .intMax705 {
+    background-color: lightyellow;
+    background-color: rgba(252, 255, 216, 0.70);
+}
+
+    .sglAvg05:hover, .sglStdEvp05:hover {
+        background-color: rgb(237, 246, 115);
+    }
+
+.B205, .B210, .B225, .B250, .B2100,
+.intA10, .intAMax10,
+.sglAvg10, .sglStdEvp10, .sglAvg110, .sglStdEvp110, .sglAvg210, .sglStdEvp210, .sglAvg310, .sglStdEvp310,
+.sglAvg410, .sglStdEvp410, .sglAvg510, .sglStdEvp510, .sglAvg610, .sglStdEvp610, .sglAvg710, .sglStdEvp710,
+.sglAvgGap10, .sglStdEvpGap10, .sglAvgGap110, .sglStdEvpGap110, .sglAvgGap210, .sglStdEvpGap210, .sglAvgGap310, .sglStdEvpGap310,
+.sglAvgGap410, .sglStdEvpGap410, .sglAvgGap510, .sglStdEvpGap510, .sglAvgGap610, .sglStdEvpGap610, .sglAvgGap710, .sglStdEvpGap710,
+.intMin110, .intMax110, .intMin210, .intMax210, .intMin310, .intMax310, .intMin410, .intMax410,
+.intMin510, .intMax510, .intMin610, .intMax610, .intMin710, .intMax710 {
+    background-color: lightgoldenrodyellow;
+    background-color: rgba(250, 217, 212, 0.70);
+}
+
+    .sglAvg10:hover, .sglStdEvp10:hover {
+        background-color: rgb(251, 184, 174);
+    }
+
+.B305, .B310, .B325, .B350, .B3100,
+.intA25, .intAMax25,
+.sglAvg25, .sglStdEvp25, .sglAvg125, .sglStdEvp125, .sglAvg225, .sglStdEvp225, .sglAvg325, .sglStdEvp325,
+.sglAvg425, .sglStdEvp425, .sglAvg525, .sglStdEvp525, .sglAvg625, .sglStdEvp625, .sglAvg725, .sglStdEvp725,
+.sglAvgGap25, .sglStdEvpGap25, .sglAvgGap125, .sglStdEvpGap125, .sglAvgGap225, .sglStdEvpGap225, .sglAvgGap325, .sglStdEvpGap325,
+.sglAvgGap425, .sglStdEvpGap425, .sglAvgGap525, .sglStdEvpGap525, .sglAvgGap625, .sglStdEvpGap625, .sglAvgGap725, .sglStdEvpGap725,
+.intMin125, .intMax125, .intMin225, .intMax225, .intMin325, .intMax325, .intMin425, .intMax425,
+.intMin525, .intMax525, .intMin625, .intMax625, .intMin725, .intMax725 {
+    background-color: greenyellow;
+    background-color: rgba(212, 250, 213, 0.70);
+}
+
+    .sglAvg25:hover, .sglStdEvp25:hover {
+        background-color: greenyellow;
+        background-color: rgb(131, 255, 134);
+    }
+
+.B405, .B410, .B425, .B450, .B4100,
+.intA50, .intAMax50,
+.sglAvg50, .sglStdEvp50, .sglAvg150, .sglStdEvp150, .sglAvg250, .sglStdEvp250, .sglAvg350, .sglStdEvp350,
+.sglAvg450, .sglStdEvp450, .sglAvg550, .sglStdEvp550, .sglAvg650, .sglStdEvp650, .sglAvg750, .sglStdEvp750,
+.sglAvgGap50, .sglStdEvpGap50, .sglAvgGap150, .sglStdEvpGap150, .sglAvgGap250, .sglStdEvpGap250, .sglAvgGap350, .sglStdEvpGap350,
+.sglAvgGap450, .sglStdEvpGap450, .sglAvgGap550, .sglStdEvpGap550, .sglAvgGap650, .sglStdEvpGap650, .sglAvgGap750, .sglStdEvpGap750,
+.intMin150, .intMax150, .intMin250, .intMax250, .intMin350, .intMax350, .intMin450, .intMax450,
+.intMin550, .intMax550, .intMin650, .intMax650, .intMin750, .intMax750 {
+    background-color: lightskyblue;
+    background-color: rgba(247, 212, 250, 0.70);
+}
+
+    .sglAvg50:hover, .sglStdEvp50:hover {
+        background-color: lightpink;
+        background-color: rgb(248, 166, 255);
+    }
+
+.B505, .B510, .B525, .B550, .B5100,
+.intA100, .intAMax100,
+.sglAvg100, .sglStdEvp100, .sglAvg1100, .sglStdEvp1100, .sglAvg2100, .sglStdEvp2100, .sglAvg3100, .sglStdEvp3100,
+.sglAvg4100, .sglStdEvp4100, .sglAvg5100, .sglStdEvp5100, .sglAvg6100, .sglStdEvp6100, .sglAvg7100, .sglStdEvp7100,
+.sglAvgGap100, .sglStdEvpGap100, .sglAvgGap1100, .sglStdEvpGap1100, .sglAvgGap2100, .sglStdEvpGap2100, .sglAvgGap3100, .sglStdEvpGap3100,
+.sglAvgGap4100, .sglStdEvpGap4100, .sglAvgGap5100, .sglStdEvpGap5100, .sglAvgGap6100, .sglStdEvpGap6100, .sglAvgGap7100, .sglStdEvpGap7100,
+.intMin1100, .intMax1100, .intMin2100, .intMax2100, .intMin3100, .intMax3100, .intMin4100, .intMax4100,
+.intMin5100, .intMax5100, .intMin6100, .intMax6100, .intMin7100, .intMax7100 {
+    background-color: lightyellow;
+    background-color: rgba(194, 198, 169, 0.70);
+}
+
+    .sglAvg100:hover, .sglStdEvp100:hover {
+        background-color: rgb(180, 194, 93);
+    }
+
+
+.sglFreq05, .intMin05, .intMax05, .sglAC05 {
+    background-color: lightyellow;
+    background-color: rgba(252, 255, 216, 0.70);
+}
+
+.sglFreq10, .intMin10, .intMax10, .sglAC10 {
+    background-color: lightgoldenrodyellow;
+    background-color: rgba(250, 217, 212, 0.70);
+}
+
+.sglFreq25, .intMin25, .intMax25, .sglAC25 {
+    background-color: greenyellow;
+    background-color: rgba(212, 250, 213, 0.70);
+}
+
+.sglFreq50, .intMin50, .intMax50, .sglAC50 {
+    background-color: lightskyblue;
+    background-color: rgba(247, 212, 250, 0.70);
+}
+
+.sglFreq100, .intMin100, .intMax100, .sglAC100 {
+    background-color: lightyellow;
+    background-color: rgba(194, 198, 169, 0.70);
+}
+
+.glColNum5 {
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+}
+
+.glColNumIn {
+    border: 1px solid rgba(1, 137, 25, 0.80);
+}
+
+.glRowSearchLimit {
+    background-color: cyan;
+    background-color: rgba(255, 0, 0, 0.15) !important;
+    border: 2px dashed red;
+}
+
+.glRowLast {
+    background-color: cyan;
+    background-color: rgba(255, 0, 0, 0.15) !important;
+    border: 2px groove green !important;
+}
+
+.glValueLess {
+    background-color: cyan;
+    background-color: rgba(41, 255, 255, 0.70);
+}
+
+.glValueLessG {
+    background-color: mediumseagreen;
+    background-color: rgba(95, 235, 74, 0.40);
+}
+
+.glValueMax {
+    color: red;
+}
+
+.glValueMaxNum {
+    color: red;
+    font-weight: bolder;
+}
+
+.glValueMinNum {
+    color: magenta;
+    font-weight: bolder;
+}
+
+.glValueSecondMaxNum {
+    color: blue;
+    font-weight: bolder;
+}
+
+.glValueActive {
+    background-color: plum;
+    background-color: rgba(255, 0, 0, 0.30);
+}
+
+.glSectionNumLast {
+    border: dashed 2px green;
+}
+
+.glcontainer {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    min-height: 100%;
+    width: 100%;
+}
+
+.loading {
+    font-family: Arial;
+    font-size: 10pt;
+    border: 5px solid #67CFF5;
+    width: 200px;
+    height: 100px;
+    display: none;
+    position: fixed;
+    background-color: White;
+    z-index: 999;
+}
+/*media*/
+
+@media print {
+    .glclosefix {
+        display: none;
+    }
+
+    .glbutton {
+        display: none;
+    }
+
+    .glcheck-print {
+        display: none;
+    }
+
+    .glbody {
+        padding-top: 5px;
+    }
+
+    .glcurrentdatafix {
+        position: relative;
+    }
+
+    .glresult {
+        position: relative;
+        top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .glcontainer {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .glcontainer {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .glcontainer {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .glcontainer {
+        max-width: 1370px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .glcontainer {
+        max-width: 1870px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .glcontainer {
+        max-width: 1240px;
+    }
+}

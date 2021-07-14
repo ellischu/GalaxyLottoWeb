@@ -1,0 +1,179 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/MasterPages/Site.Mobile.Master.cs" Inherits="GalaxyLottoWeb.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="~/planet.ico" rel="shortcut icon" type="image/x-icon" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <title><%: Page.Title %> - GalaxyLotto</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server" ID="MainScript">
+            <Scripts>
+                <%--若要深入了解如何在 ScriptManager 中統合指令碼，請參閱 https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--架構指令碼--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <%--<asp:ScriptReference Name="bootstrap" Path="~/Scripts/bootstrap.js" />--%>
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="glScript" />
+                <%--網站指令碼--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../Default.aspx">GalaxyLotto</a>
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" data-in="fadeInDown" data-out="fadeOutUp" id="navbarcollapse">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active"><a class="nav-link" href="../Default.aspx">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Pages/Search.aspx">計算</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Frequency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">頻率<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="Frequency">
+                            <a class="dropdown-item" href="#">頻率</a>
+                            <a class="dropdown-item" href="#">頻率總表</a>
+                            <a class="dropdown-item" href="#">頻率組</a>
+                            <a class="dropdown-item" href="#">綜合計算01</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="FreqActive" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">活性<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="FreqActive">
+                            <a class="dropdown-item" href="#">活性表</a>
+                            <a class="dropdown-item" href="#">活性表01</a>
+                            <a class="dropdown-item" href="#">活性表01總表 </a>
+                            <a class="dropdown-item" href="#">活性表01R總表</a>
+                            <a class="dropdown-item" href="#">活性表02</a>
+                            <a class="dropdown-item" href="#">活性表03</a>
+                            <a class="dropdown-item" href="#">活性圖</a>
+                            <a class="dropdown-item" href="#">活性圖01</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="FreqActiveH" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">活性歷史<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="FreqActiveH">
+                            <a class="dropdown-item" href="#">活性歷史表</a>
+                            <a class="dropdown-item" href="#">活性歷史總表</a>
+                            <a class="dropdown-item" href="#">活性歷史總表01</a>
+                            <a class="dropdown-item" href="#">活性歷史總表01(預載)</a>
+                            <a class="dropdown-item" href="#">活性歷史總表01</a>
+                            <a class="dropdown-item" href="#">活性歷史總表All</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="MissTotal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">遺漏<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="MissTotal">
+                            <a class="dropdown-item" href="#">遺漏表</a>
+                            <a class="dropdown-item" href="#">遺漏整合表</a>
+                            <a class="dropdown-item" href="#">遺漏整合表01</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="FreqDNA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">數字DNA<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="FreqDNA">
+                            <a class="dropdown-item" href="#">數字DNA</a>
+                            <a class="dropdown-item" href="#">DNA整合表</a>
+                            <a class="dropdown-item" href="#">數字區間</a>
+                            <a class="dropdown-item" href="#">數字區間整合表</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="DataN" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">平衡振盪<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="DataN">
+                            <a class="dropdown-item" href="#">振盪表</a>
+                            <a class="dropdown-item" href="#">振盪圖</a>
+                            <a class="dropdown-item" href="#">平衡表</a>
+                            <a class="dropdown-item" href="#">平衡振盪總表01</a>
+                            <a class="dropdown-item" href="../Pages/NextBalance.aspx">振盪平衡計算</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="TablePercent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">百分表<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="TablePercent">
+                            <a class="dropdown-item" href="#">TP00</a>
+                            <a class="dropdown-item" href="#">TP01</a>
+                            <a class="dropdown-item" href="#">TP02</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="Sum" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">和數表<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="Sum">
+                            <a class="dropdown-item disabled" href="#" aria-disabled="true" tabindex="-1">和數表</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="Test" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">組合<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="Test">
+                            <a class="dropdown-item " href="#" aria-disabled="true" tabindex="-1">計算組合</a>
+                            <a class="dropdown-item disabled" href="#" aria-disabled="true" tabindex="-1">聰明組合</a>
+                        </div>
+                    </li>
+
+
+                    <%--                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    --%>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="OtherOption" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">其他<span class="caret" /></a>
+                        <div class="dropdown-menu" aria-labelledby="OtherOption">
+                            <a class="dropdown-item" href="../Pages/Update.aspx">更新</a>
+                            <a class="dropdown-item" href="../Pages/Related.aspx">相關</a>
+                            <a class="dropdown-item" href="../Pages/About.aspx">說明</a>
+                            <a class="dropdown-item disabled" href="../Pages/Contact.aspx" tabindex="-1" aria-disabled="true">連絡人</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container body-content">
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </section>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - GalaxyLotto 2010</p>
+                <friendlyUrls:ViewSwitcher runat="server" />
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SgmlReaderUniversal</name>
+    </assembly>
+    <members>
+        <member name="T:Sgml.UniversalEntityResolver">
+            <summary>
+            A special implementation of IEntityResolver that uses the UWP Windows.Storage API's
+            for local file access and HttpClient for web content.
+            </summary>
+        </member>
+        <member name="M:Sgml.UniversalEntityResolver.GetContent(System.Uri)">
+            <summary>
+            Open the given Uri.  If the Uri is relative then it could be referring to either a local file or
+            an embedded resource.
+            </summary>
+            <param name="uri">the absolute or relative Uri of the resource to load</param>
+            <returns>The stream, or throws exception if the resource is not found</returns>
+        </member>
+    </members>
+</doc>
